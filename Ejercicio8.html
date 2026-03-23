@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide al usuario que introduzca 5 números, 
+        guárdalos en un array y luego encuentra el mayor.</title>
+</head>
+<body>
+    
+    <script>
+        let numeros = [];
+
+        for (let i = 0; i < 5; i++) {
+            let numero = parseFloat(prompt("Introduce el número " + (i + 1) + ":"));
+            numeros.push(numero);
+        }
+
+        let mayor = numeros[0];
+
+        for (let i = 1; i < numeros.length; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i];
+            }
+        }
+
+        alert("El número mayor es: " + mayor);
+    </script>
+    
+</body>
+</html>

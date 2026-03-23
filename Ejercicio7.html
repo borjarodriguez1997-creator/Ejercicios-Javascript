@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide un número y dibuja en consola una línea de asteriscos de esa longitud.</title>
+</head>
+<body>
+    
+    <script>
+        let numero = parseInt(prompt("Introduce un número:"));
+        let linea = "";
+
+        for (let i = 0; i < numero; i++) {
+            linea += "*";
+        }
+
+        alert(linea);
+    </script>
+</body>
+</html>

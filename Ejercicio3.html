@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide números al usuario hasta que introduzca un 0. 
+        Al final, muestra la suma total de todos los números introducidos.</title>
+</head>
+<body>
+    
+    <script>
+        let suma = 0;
+        let numero = parseInt(prompt("Introduce un número (0 para terminar):"));
+
+        while (numero !== 0) {
+        suma += numero;
+        numero = parseInt(prompt("Introduce otro número (0 para terminar):"));
+        }
+
+        alert("La suma total es: " + suma);
+    </script>
+</body>
+</html>

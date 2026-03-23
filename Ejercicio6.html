@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea un sistema que pida una clave. El usuario tiene solo 3 intentos. 
+        Si falla los 3, el programa se bloquea.</title>
+</head>
+<body>
+    
+    <script>
+        let claveCorrecta = "1234";
+        let intentos = 3;
+        let acceso = false;
+
+        for (let i = 1; i <= intentos; i++) {
+        let clave = prompt("Introduce la clave:");
+
+        if (clave === claveCorrecta) {
+            acceso = true;
+            alert("Acceso permitido");
+            break;
+        } else {
+            alert("Clave incorrecta. Intentos restantes: " + (intentos - i));
+        }
+        }
+
+        if (!acceso) {
+            alert("Programa bloqueado");
+        }
+    </script>
+</body>
+</html>

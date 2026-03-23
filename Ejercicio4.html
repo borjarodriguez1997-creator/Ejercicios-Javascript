@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide una palabra y utiliza un bucle for para mostrarla 
+        letra por letra en orden inverso (del final al principio).
+</title>
+</head>
+<body>
+    
+    <script>
+        let palabra = prompt("Introduce una palabra:");
+        let resultado = "";
+
+        for (let i = palabra.length - 1; i >= 0; i--) {
+        resultado += palabra[i];
+        }
+
+        alert("La palabra al revés es: " + resultado);
+    </script>
+</body>
+</html>
